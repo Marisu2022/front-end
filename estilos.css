@@ -314,5 +314,9 @@
     letter-spacing: 0.5em;
     text-align: center;
   }
+  
 
- 
+ .edit_trash{
+   padding: 10px;
+   
+ }
