@@ -39,10 +39,10 @@
          </div>
 
          <ul class="d-flex redes-container">         
-          <li class="github"><img src="https://img.icons8.com/material-outlined/32/000000/github.png" /></li>
-          <li class="linkedin"> <img src="https://img.icons8.com/ios-glyphs/32/000000/linkedin.png"/></li>
-          <li class="whatsapp"><img src="https://img.icons8.com/small/32/000000/whatsapp.png"/></li>
-          <li class="correo"><img src="https://img.icons8.com/material-outlined/32/000000/find-email.png"/></li>
+          <li  class="github"><a href="https://github.com/Marisu2022"><img src="https://img.icons8.com/material-outlined/32/000000/github.png"/></a></li>
+          <li class="linkedin"><a href="https://www.linkedin.com/in/maria-susana-ferro-3171bb55/"><img src="https://img.icons8.com/ios-glyphs/32/000000/linkedin.png"></a></li>
+          <li class="whatsapp"><a href=" https://wa.me/5492944913856"><img src="https://img.icons8.com/small/32/000000/whatsapp.png"/></a></li>
+          <li class="correo"><a href="mailto:lic.msferro.vla@gmail.com"><img src="https://img.icons8.com/material-outlined/32/000000/find-email.png"/></a></li>
           <img class="editar"src="https://img.icons8.com/small/32/000000/edit.png"/>
           <img class="borrar" src="https://img.icons8.com/windows/32/000000/delete-forever.png"/>
         </ul>       
@@ -88,6 +88,7 @@
           <div class="about-container-fluid-lg">
             <div class="about-container">
               <h2 id="title_section">Sobre mi</h2>
+              <div class="card nat-card">
               <p class=about id="about_me">Mi trayectoria laboral inicia hace 30 años y conjuga el desarrollo de proyectos creativos mediados por TIC, la docencia y la gestión de diversas áreas de gobierno a nivel municipal y provincial. 
           
                 Incorporé el estudio y la puesta en marcha de nuevas tecnologías en cada desafío, buscando brindar un servicio de vanguardia.
@@ -95,7 +96,31 @@
                 
                 Actualmente jubilada, busco formar parte de nuevos proyectos innovadores y de impacto social. 
                 </p>
-                              
+                  <!---div oculto que aparece para editar------>
+              <div>
+                <input id="edit-about" placeholder="Sobre mi" type="text"
+                oninput="myFunction3(this.value)"
+              style="display:none">
+            </div>
+                <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+      <div class="btn-group">
+        <div class="btn-edit" onclick="editar_about()">
+          <a href="#about" class="btn">
+          <i class="bi bi-pencil-square"></i>
+          </a>
+        </div>
+        <!----------este es el div que contiene el botón eliminar-->   
+        <div class="btn_trash" onclick= "editar_about()">
+          <a href="#about" class="btn">
+          <i class="bi bi-trash"></i>
+        </a>
+        </div>
+        </div> 
+              </div>            
               </div>
           </div>
                               
@@ -109,6 +134,7 @@
                 </div>
              
               <div class="container mt-3">
+                <div class="card nat-card">
               <table class="table table-striped">
                 
                   <tr> 
@@ -152,27 +178,74 @@
                       </tr>
                     
                   </table>
+                   <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+      <div class="btn-group">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#experience" class="btn">
+          <i class="bi bi-pencil-square"></i>
+          </a>
+        </div>
+        <!----------este es el div que contiene el botón eliminar-->   
+        <div class="btn_trash" onclick= "cambiar_parrafo()">
+          <a href="#experience" class="btn">
+          <i class="bi bi-trash"></i>
+        </a>
+        </div>
+        </div> 
+                </div>
               </div>        
                    
                   <div class="experience container mt-3">
+                    <div class="card nat-card">
                   <h5 class="text-center">Otros recorridos realizados</br></br></h5>
-                  <table table table-borderless>
+                  <table table borderless>
                     <tbody>
-                        <tr>Autora del libro: “Planificación creativa para clases virtuales” Editorial Autores de Argentina. 2020</tr>
-                       <tr>Profesora a cargo Seminario Taller virtual y presencial: “Uso Didáctico de las TIC” Instituto de Formación Docente 8, Junín de los Andes.</tr>
-                       <tr>Integrante del equipo técnico pedagógico de redacción: “Documentos de Desarrollo Curricular para las Instituciones Educativas de la Provincia del Neuquén.</tr>
-                       <tr>Responsable de gestión y organización de las Jornadas Intensivas de Nivel Inicial Neuquén .PROMER I</tr>
-                       <tr> Dictó curso Juego en el Nivel Inicial en Coordinación con referentes del Plan de Lectura.</tr>
-                       <tr>Responsable y autora de dos proyectos registrados a nivel provincial:
-                       “Limpiemos Nuestra Escuela de Ruidos” y “Recuperemos los Valores a través del Arte”</tr>
-                       <tr>Ganador Concurso de Proyectos Innovadores año 2000 con el proyecto “Recuperemos los valores a través del Arte” para la Escuela Nº 104 de Villa La Angostura.</tr>
-                       <tr>Expositora X Encuentro de Arte y Educación año 2008</tr>
-                       <tr>Coautora del libro: “Historias desde la Palabra la Imagen y el Sonido” reconocido por el Consejo Provincial de Educación de Neuquén.</tr>
-                       <tr>Dictó diferentes cursos de capacitación a nivel provincial: “El Juego en el Nivel Inicial”  “Juego y TIC en el Nivel Inicial”  en el marco de las Jornadas Intensivas para Docentes.</tr>
+                        <tr>
+                          <td>-  Autora del libro: “Planificación creativa para clases virtuales” Editorial Autores de Argentina. 2020
+                          </td>
+                        </tr>   
+                        <tr>
+                          <td>-  Profesora a cargo Seminario Taller virtual y presencial: “Uso Didáctico de las TIC” Instituto de Formación Docente 8, Junín de los Andes.</td>
+                        </tr>
+                       <tr><td>-  Integrante del equipo técnico pedagógico de redacción: “Documentos de Desarrollo Curricular para las Instituciones Educativas de la Provincia del Neuquén.
+                       </td>
+                       </tr>
+                       <tr><td>-  Responsable de gestión y organización de las Jornadas Intensivas de Nivel Inicial Neuquén .PROMER I</td></tr>
+                       <tr><td>-  Dictó curso Juego en el Nivel Inicial en Coordinación con referentes del Plan de Lectura.</td></tr>
+                       <tr><td>-  Responsable y autora de dos proyectos registrados a nivel provincial:
+                       “Limpiemos Nuestra Escuela de Ruidos” y “Recuperemos los Valores a través del Arte”</td></tr>
+                       <tr><td>-  Ganador Concurso de Proyectos Innovadores año 2000.Proyecto: “Recuperemos los valores a través del Arte” Escuela Nº 104, Villa La Angostura.</td></tr>
+                       <tr><td>-  Expositora X Encuentro de Arte y Educación año 2008</tr>
+                       <tr><td>-  Coautora del libro: “Historias desde la Palabra la Imagen y el Sonido” reconocido por el Consejo Provincial de Educación de Neuquén.</td></tr>
+                       <tr><td>-  Dictó diferentes cursos de capacitación a nivel provincial: “El Juego en el Nivel Inicial”  “Juego y TIC en el Nivel Inicial”. Marco: Jornadas Intensivas para Docentes.</td></tr>
                     </tbody>
                     </table>
+                       <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+      <div class="btn-group">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#experience" target="_blank"class="btn">
+          <i class="bi bi-pencil-square"></i>
+          </a>
+        </div>
+        <!----------este es el div que contiene el botón eliminar-->   
+        <div class="btn_trash" onclick= "cambiar_parrafo()">
+          <a href="#experience" class="btn">
+          <i class="bi bi-trash"></i>
+        </a>
+        </div>
+        </div> 
                      </div>
              </div>
+              </div>
+
                  </section>
                   <!------------------------ Educación ----------------------->
         <section id="education">
@@ -180,6 +253,7 @@
           <div class="educacion-container">
             <h2 id="title_section">Educación</h2>
             </div>
+            <div class="card nat-card">
 
             <div class="container mt-3">
               <table class="table  table-hover">
@@ -214,7 +288,29 @@
                               
                               </table>
                               </div>
+                              
+            <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+
+          <div class="btn-group">
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+              <a href="#education" class="btn">
+              <i class="bi bi-pencil-square"></i>
+              </a>
+            </div>
             
+            <!----------este es el div que contiene el botón eliminar-->   
+            <div class="btn_trash" onclick= "cambiar_parrafo()">
+              <a href="#education" class="btn">
+              <i class="bi bi-trash"></i>
+            </a>
+            </div>
+            </div> 
+            </div>
+            <div class="card nat-card">
                               
                               <div class="others-container mt-3">
                                 <h5 class="text-center">Algunos cursos realizados</br></br></h5>
@@ -245,8 +341,32 @@
                                     </tr>
                                 </table>
                               </div>
-                            </div>
+                            
+          
+            <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+
+          <div class="btn-group">
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+              <a href="#education" class="btn">
+              <i class="bi bi-pencil-square"></i>
+              </a>
+            </div>
+            
+            <!----------este es el div que contiene el botón eliminar-->   
+            <div class="btn_trash" onclick= "cambiar_parrafo()">
+              <a href="#education" class="btn">
+              <i class="bi bi-trash"></i>
+            </a>
+            </div>
+            </div> 
           </div>
+          </div>
+          
+          
           
          </section>
           <!------------------------ Habilidades ----------------------->
@@ -255,6 +375,7 @@
            <div class="habilidades-container">
            <h2 id="title_section">Habilidades</h2>
            </div>
+           <div class="card nat-card">
         
                 <!---------------círculos fila 1-->
                 <div class="container py-5">
@@ -424,7 +545,29 @@
                    
           </div>
              </div>         
-   </div>
+  
+     <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+
+          <div class="btn-group">
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+              <a href="#contact" class="btn">
+              <i class="bi bi-pencil-square"></i>
+              </a>
+            </div>
+            
+            <!----------este es el div que contiene el botón eliminar-->   
+            <div class="btn_trash" onclick= "cambiar_parrafo()">
+              <a href="#contact" class="btn">
+              <i class="bi bi-trash"></i>
+            </a>
+            </div>
+            </div> 
+         </div>
+        </div>
    
           
   </section>
@@ -432,38 +575,64 @@
   <!-------------Proyectos--------->
   <section id="projects">
     <div class="projects-container-fluid-lg">
+  
       <div class="projects-container">
         <h2 id="title_section">Proyectos</h2>
       </div>
+      <div class="card nat-card">
       <div class="container mt-3">
         <table class="table  table-hover">
     <tr>
       <td>
-      <image class="img-proyecto" src="imagenes/Aula Juego.jpg.png" alt="Aula Juego"></image></td>
+      <a href="https://n04zpcyxwb29pdihdn29ag-on.drv.tw/Juego_como_contenido_en_el_Nivel_Inicial_de_la_Provincia_del_Neuqun/"><image class="img-proyecto" src="imagenes/Aula Juego.jpg.png" alt="Aula Juego"></image></a></td>
           <td><b>2015</b></br>Realizado con Excelearning</br><b>Aula virtual para formación docentes de Nivel Inicial</b>
           </td>
             </tr>
             
             <tr>     
-              <td ><image class="img-proyecto" src="imagenes/Paideia.jpg.png" alt="Maletín de ideas educativas"></image></td>
+              <td ><a href="http://www.redpaideia.com.ar/"><image class="img-proyecto" src="imagenes/Paideia.jpg.png" alt="Maletín de ideas educativas"></image></a></td>
               <td><b>2019</b></br> Realizado con el constructor de sitios web de WNPOWER Argentina</br><b>Gestión del sitio y de la revista virtual</b><br> www.redpaideia.com.ar            
                </td>
                 </tr>
                 
                 <tr>     
-                  <td><image class="img-proyecto" src="imagenes/RAM.jpg.png" alt="RAM"></image></td>
+                  <td><a href="https://www.figma.com/proto/OHfyXMVuScswwalZG4wFjP/Untitled?node-id=0%3A1&scaling=scale-down&page-id=0%3A1"><image class="img-proyecto3" src="imagenes/RAM.jpg.png" alt="RAM"></image></a></td>
                   <td><b>En proceso</b></br>FIGMA </br><b>App para ejercitar la memoria y prevenir el Alzheimer</b>
                   </td>
                     </tr>
                 
                         </table>
                         </div>
+   
+    
+     <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+
+          <div class="btn-group">
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+              <a href="#projects" class="btn">
+              <i class="bi bi-pencil-square"></i>
+              </a>
+            </div>
+            
+            <!----------este es el div que contiene el botón eliminar-->   
+            <div class="btn_trash" onclick= "cambiar_parrafo()">
+              <a href="#projects" class="btn">
+              <i class="bi bi-trash"></i>
+            </a>
+            </div>
+            </div> 
     </div>
+  </div>
                                  
   </section>
   <!------------------Contacto---------------------------------------------->
   <section id="contact">
     <div class="contact-container-fluid-lg">
+      <div class="card nat-card">
       <div class="contact-container">
         <h2 id="title_section">Contacto</h2>
       </div>
@@ -510,12 +679,35 @@
                                   <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                               </div>
                           </div>
-                      </fieldset>
+                    
                   </form>
               </div>
           </div>
       </div>
-      
+    </div>
+      <!---------fuente del ícono----
+          <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
+          ---->
+
+      <div class="btn-group">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#contact" class="btn">
+          <i class="bi bi-pencil-square"></i>
+          </a>
+        </div>
+        
+        <!----------este es el div que contiene el botón eliminar-->   
+        <div class="btn_trash" onclick= "cambiar_parrafo()">
+          <a href="#contact" class="btn">
+          <i class="bi bi-trash"></i>
+        </a>
+        </div>
+        </div> 
+      </div>
+      </div>
+    
  
   
   </section>
@@ -523,39 +715,58 @@
     <!------------------------ El Pie de página comienza aquí ----------------------->
     <footer class="footer section">
       <div class="footer-container-fluid-lg">
-          <h2 class="footer__title">María Susana Ferro</h2>
-          <p class="footer-description">
-              Full Stack Developer
-          </p>
-
-          <div class="footer__social">
+        <div class="card nat-card">
+          <div>
+          <h4 id="text-footer">
+            María Susana Ferro</h4>
+            </div>
+               <!---div oculto que aparece para editar------>
+              <div>
+                <input id="edit-footer" placeholder="nombre" type="text"
+                oninput="myFunction2(this.value)"
+              style="display:none">
+            </div>
             
-              <a href="https://www.linkedin.com/in/maria-susana-ferro/" class="footer__link"><i class="bx bxl-linkedin"></i></a>
-          </div>
-          
-          
-         <!---------fuente del ícono----
+              <!-- espacio para cargar archivo(lo terminaré cuando ubique el lugar para descargar mi cv) 
+              <input type="file" id="file1"
+            onchange="showfile(this)">---->
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/maria-susana-ferro/" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+        </div>
+           <!---------fuente del ícono----
           <i class="bi bi-pencil-square"></i>
+          este es el div que contiene el boton editar, al usar group los 
+          botones irán uno al lado del otro
           ---->
-          <div class="edit_trash"><i class="bi bi-pencil-square"></i>
-          </div>
-          <div class="edit_trash"><i class="bi bi-trash"></i></div>
-          
-
-         
+      <div class="btn-group">
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+          <a href="#footer section" class="btn">
+          <i class="bi bi-pencil-square"></i>
+          </a>
+        </div>
+        <!----------este es el div que contiene el botón eliminar-->   
+        <div class="btn_trash" onclick= "cambiar_parrafo()">
+          <a href="#footer section" class="btn">
+          <i class="bi bi-trash"></i>
+        </a>
+        </div>
+        </div> 
+         </div>
+      </div>   
+      
   </footer>
   <!------------------------ Final del pie de página f ----------------------->
 
   <!------------------------- Archivo de JavaScript ---------------------------->
-          
-          
-            
-    <script src="output/app.js">
-     
-      
-    </script> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+ 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="output/app.js"></script> 
+
+  
+
+     
 </body>
 
 </html>

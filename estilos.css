@@ -181,8 +181,8 @@
   
   .box {
     background: #030f20;
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,6 +275,13 @@
     float: left;
     justify-self: center;
   }
+  .img-proyecto3 {
+    width: 30%;
+    height: 20%;
+    float: left;
+    justify-self: center;
+  }
+
   .table {
     padding: 20px;
   }
@@ -299,7 +306,7 @@
   .footer-container-fluid-lg{
     background-color: #062146;
     text-align: center;
-    color: #fff;
+    color: rgb(14, 8, 8);
     width: 75%;
     height: 200px;
     padding: 30px;
@@ -307,9 +314,11 @@
     letter-spacing: 0.5em;
     text-align: center;
   }
+  .footer_title {
+    margin-top:10px;
+  }
   
 
- .edit_trash{
-   padding: 10px;
-   
- }
+ .btn-group{
+   align-self: flex-end;
+}
