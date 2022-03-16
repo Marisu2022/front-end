@@ -1,215 +1,649 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    --webkit-box-sizing: border-box;
-    --moz-box-sizing: border-box;
-    --sizing: border-box;
-  }
-  
-  .logo-container {
-    background-color: white;
-    width: 15%;
-    height: 52px;
-    float: left;
-    justify-content: start;
-    align-items: center;
-  
-    margin: 10px;
-  }
-  .redes-container {
-    position: relative;
-    background-color: white;
-    width: 55%;
-    height: 52px;
-    justify-content: end;
-    align-items: center;
-    list-style: none;
-    float: left;
-    margin: 10px;
-  }
-  .github {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  .linkedin {
-    margin-right: 10px;
-  }
-  .whatsapp {
-    margin-right: 10px;
-  }
-  .correo {
-    margin-right: 10px;
-  }
-  
-  .borrar {
-    margin-right: 20px;
-  }
-  
-  .ap {
-    position: relative;
-    width: 49px;
-    height: 52px;
-    float: left;
-  }
-  #text-ap {
-    position: relative;
-    width: 87px;
-    height: 31px;
-    float: left;
-    padding: 10px;
-  
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.2em;
-  
-    color: #000000;
-  }
-  
-  .sidebar-container {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    list-style: none;
-    z-index: 1030;
-  
-    background-color: #030f20;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 50px;
-    letter-spacing: 0.2em;
-    align-items: center;
-    color: #fff;
-    justify-content: center;
-  }
-  a:link {
-    text-decoration: none;
-    color: #fff;
-  }
-  #navegador {
-    align-items: center;
-    justify-items: center;
-  }
-  
-  .portada-container-fluid-lg {
-    position: relative;
-    background-color: #020210;
-    display: inline-block;
-  }
-  #portada {
-    width: 100%;
-    height: 100%;
-  }
-  .nombre-container {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 50px;
-    letter-spacing: 0.5em;
-    
-    width: 85%;
-    
-  
-    color: #fcfcff;
-  }
-  
-  .info-container{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    
-  
-  }
-  
-  /*------------about----------*/
-  .about-container-fluid-lg {
-    width: 75%;
-    height: auto;
-    padding-top: 80px;
-    padding-left: 60px;
-    padding-right: 60px;
-    justify-content: center;
-    text-align: justify;
-  
-  }
-  .about {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  
-  /*--------------------experiencia----------*/
-  .experience-container-fluid-lg {
-    width: 75%;
-    height: auto;
-    padding: 50px;
-    justify-content: center;
-    align-content: center;
-  }
-  
+  margin: 0px;
+  padding: 0px;
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  --sizing: border-box;
+}
 
-  
-  /*------------Educación-------------------*/
-  .education-container-fluid-lg {
-    width: 75%;
-    height: auto;
-    padding: 50px;
-    justify-content: center;
-    align-content: center;
-  }
-  
-  .img-thumbnail-usal {
-    width: 80%;
-    height: 70%;
-  }
-  
-  
-  /*------------kills------------*/
-  .habilidades-container-fluid-lg {
-    width: 75%;
-    height: auto;
-    padding: 50px;
-    justify-content: center;
-    align-content: center;
-  }
-  /*--------------------circulos--------------*/
-  
-  .box {
-    background: #030f20;
-    width: 250px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s;
-    float: left;
-  
-    margin: 10px;
-    padding: 10px;
-  }
-  /* .box:hover
+.logo-container {
+  background-color: white;
+  width: 15%;
+  height: 52px;
+  float: left;
+  justify-content: start;
+  align-items: center;
+
+  margin: 10px;
+}
+.redes-container {
+  position: relative;
+  background-color: white;
+  width: 55%;
+  height: 52px;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  float: left;
+  margin: 10px;
+}
+.github {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.linkedin {
+  margin-right: 10px;
+}
+.whatsapp {
+  margin-right: 10px;
+}
+.correo {
+  margin-right: 10px;
+}
+
+.borrar {
+  margin-right: 20px;
+}
+
+.ap {
+  position: relative;
+  width: 49px;
+  height: 52px;
+  float: left;
+}
+#text-ap {
+  position: relative;
+  width: 87px;
+  height: 31px;
+  float: left;
+  padding: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.2em;
+
+  color: #000000;
+}
+
+.sidebar-container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  list-style: none;
+  z-index: 1030;
+
+  background-color: #030f20;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 0.2em;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+}
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+#navegador {
+  align-items: center;
+  justify-items: center;
+}
+
+.portada-container-fluid-lg {
+  position: relative;
+  background-color: #020210;
+  display: inline-block;
+}
+#portada {
+  width: 100%;
+  height: 100%;
+}
+.nombre-container {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  letter-spacing: 0.5em;
+
+  width: 85%;
+
+  color: #fcfcff;
+}
+
+.info-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/*------------about----------*/
+.about-container-fluid-lg {
+  width: 75%;
+  height: auto;
+  padding-top: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: center;
+  text-align: justify;
+}
+.about {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*--------------------experiencia----------*/
+.experience-container-fluid-lg {
+  width: 75%;
+  height: auto;
+  padding: 50px;
+  justify-content: center;
+  align-content: center;
+}
+
+/*------------Educación-------------------*/
+.education-container-fluid-lg {
+  width: 75%;
+  height: auto;
+  padding: 50px;
+  justify-content: center;
+  align-content: center;
+}
+
+.img-thumbnail-usal {
+  width: 80%;
+  height: 70%;
+}
+
+/*------------kills------------*/
+.habilidades-container-fluid-lg {
+  width: 75%;
+  height: auto;
+  padding: 50px;
+  justify-content: center;
+  align-content: center;
+}
+/*--------------------circulos--------------*/
+
+.box {
+  background: #030f20;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+  float: left;
+
+  margin: 10px;
+  padding: 10px;
+}
+/* .box:hover
   {
    transform:scale(1.2);
   } */
-  .box .percent {
+.box .percent {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 95) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent .num h2 {
+  font-size: 48px;
+}
+.box .percent .num h2 span {
+  font-size: 24px;
+}
+.box .text {
+  padding: 10px;
+  color: #999;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/*segundo círculo---*/
+.box .percent2 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent2 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent2 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent2 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent2 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 95) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent2 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent2 .num h2 {
+  font-size: 48px;
+}
+.box .percent2 .num h2 span {
+  font-size: 24px;
+}
+/*tercer círculo--*/
+.box .percent3 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent3 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent3 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent3 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent3 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 85) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent3 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent3 .num h2 {
+  font-size: 48px;
+}
+.box .percent3 .num h2 span {
+  font-size: 24px;
+}
+/*cuarto círculo*/
+.box .percent4 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent4 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent4 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent4 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent4 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent4 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent4 .num h2 {
+  font-size: 48px;
+}
+.box .percent4 .num h2 span {
+  font-size: 24px;
+}
+
+/*círculos segunda fila 
+      quinto círculo*/
+
+.box .percent5 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent5 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent5 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent5 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent5 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 87) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent5 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent5 .num h2 {
+  font-size: 48px;
+}
+.box .percent5 .num h2 span {
+  font-size: 24px;
+}
+/*  sexto círculo*/
+.box .percent6 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent6 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent6 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent6 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent6 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 100) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent6 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent6 .num h2 {
+  font-size: 48px;
+}
+.box .percent6 .num h2 span {
+  font-size: 24px;
+}
+/*sétimo círculo*/
+.box .percent7 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent7 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent7 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent7 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent7 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 100) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent7 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent7 .num h2 {
+  font-size: 48px;
+}
+.box .percent7 .num h2 span {
+  font-size: 24px;
+}
+/* octavo círculo---------*/
+.box .percent8 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent8 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent8 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent8 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent8 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent8 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent8 .num h2 {
+  font-size: 48px;
+}
+.box .percent8 .num h2 span {
+  font-size: 24px;
+}
+
+/*-----------segunda fila-------------
+---noveno círculo--------*/
+.box .percent9 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent9 svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent9 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent9 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent9 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 87) / 100);
+  stroke: #03a9f4;
+}
+
+.box .percent9 .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+.box .percent9 .num h2 {
+  font-size: 48px;
+}
+.box .percent9 .num h2 span {
+  font-size: 24px;}
+  /*------------décimo círculo------------*/
+  .box .percent10 {
     width: 150px;
     height: 150px;
     position: relative;
   }
-  .box .percent svg {
+  .box .percent10 svg {
     width: 150px;
     height: 150px;
     position: relative;
   }
-  .box .percent svg circle {
+  .box .percent10 svg circle {
     width: 150px;
     height: 150px;
     fill: none;
@@ -220,15 +654,16 @@
     stroke-dashoffset: 440;
     stroke-linecap: round;
   }
-  .box .percent svg circle:nth-child(1) {
+  .box .percent10 svg circle:nth-child(1) {
     stroke-dashoffset: 0;
     stroke: #f3f3f3;
   }
-  .box .percent svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 87) / 100);
+  .box .percent10 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
     stroke: #03a9f4;
   }
-  .box .percent .num {
+  
+  .box .percent10 .num {
     top: 0;
     left: 0;
     width: 100%;
@@ -239,86 +674,175 @@
     position: absolute;
     color: white;
   }
-  .box .percent .num h2 {
+  .box .percent10 .num h2 {
     font-size: 48px;
   }
-  .box .percent .num h2 span {
-    font-size: 24px;
-  }
-  .box .text {
-    padding: 10px;
-    color: #999;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-  /*---------------Acá terminan los círculos--------------*/
-  /*---------------Proyectos----------*/
-  .projects-container-fluid-lg {
-    width: 75%;
-    height: auto;
-    padding: 30px;
-  
-    justify-content: center;
-    align-content: center;
-  }
-  .projects-container {
-    width: 75%;
-    height: auto;
-    padding: 30px;
-  
-    justify-content: center;
-    align-content: center;
-  }
-  .img-proyecto {
-    width: 50%;
-    height: 50%;
-    float: left;
-    justify-self: center;
-  }
-  .img-proyecto3 {
-    width: 30%;
-    height: 20%;
-    float: left;
-    justify-self: center;
-  }
+  .box .percent10 .num h2 span {
+    font-size: 24px;}
+    /*----------enésimo círculo---------------*/
+    .box .percent11 {
+      width: 150px;
+      height: 150px;
+      position: relative;
+    }
+    .box .percent11 svg {
+      width: 150px;
+      height: 150px;
+      position: relative;
+    }
+    .box .percent11 svg circle {
+      width: 150px;
+      height: 150px;
+      fill: none;
+      stroke-width: 10;
+      stroke: #000;
+      transform: translate(5px, 5px);
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      stroke-linecap: round;
+    }
+    .box .percent11 svg circle:nth-child(1) {
+      stroke-dashoffset: 0;
+      stroke: #f3f3f3;
+    }
+    .box .percent11 svg circle:nth-child(2) {
+      stroke-dashoffset: calc(440 - (440 * 95) / 100);
+      stroke: #03a9f4;
+    }
+    
+    .box .percent11 .num {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      color: white;
+    }
+    .box .percent11 .num h2 {
+      font-size: 48px;
+    }
+    .box .percent11 .num h2 span {
+      font-size: 24px;}
+      /*-----------duodécimo círculo----------*/
+      .box .percent12 {
+        width: 150px;
+        height: 150px;
+        position: relative;
+      }
+      .box .percent12 svg {
+        width: 150px;
+        height: 150px;
+        position: relative;
+      }
+      .box .percent12 svg circle {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+      }
+      .box .percent12 svg circle:nth-child(1) {
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+      }
+      .box .percent12 svg circle:nth-child(2) {
+        stroke-dashoffset: calc(440 - (440 * 87) / 100);
+        stroke: #03a9f4;
+      }
+      
+      .box .percent12 .num {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: white;
+      }
+      .box .percent12 .num h2 {
+        font-size: 48px;
+      }
+      .box .percent12 .num h2 span {
+        font-size: 24px;}
+       
 
-  .table {
-    padding: 20px;
-  }
-  /*------------------------contacto----------*/
-  
-  .contact-container-fluid-lg {
-    width: 75%;
-    height: auto;
-    padding: 30px;
-  
-    justify-content: center;
-    align-content: center;
-  }
-  .contact-container {
-    width: 100%;
-    height: auto;
-    padding: 30px;
-  
-    justify-content: center;
-    align-content: center;
-  }
-  .footer-container-fluid-lg{
-    background-color: #062146;
-    text-align: center;
-    color: rgb(14, 8, 8);
-    width: 75%;
-    height: 200px;
-    padding: 30px;
-    line-height: 14px;
-    letter-spacing: 0.5em;
-    text-align: center;
-  }
-  .footer_title {
-    margin-top:10px;
-  }
-  
+/*---------------Acá terminan los círculos--------------*/
 
- .btn-group{
-   align-self: flex-end;
+/*---------------Proyectos----------*/
+.projects-container-fluid-lg {
+  width: 75%;
+  height: auto;
+  padding: 30px;
+
+  justify-content: center;
+  align-content: center;
+}
+.projects-container {
+  width: 75%;
+  height: auto;
+  padding: 30px;
+
+  justify-content: center;
+  align-content: center;
+}
+.img-proyecto {
+  width: 50%;
+  height: 50%;
+  float: left;
+  justify-self: center;
+}
+.img-proyecto3 {
+  width: 30%;
+  height: 20%;
+  float: left;
+  justify-self: center;
+}
+
+.table {
+  padding: 20px;
+}
+/*------------------------contacto----------*/
+
+.contact-container-fluid-lg {
+  width: 75%;
+  height: auto;
+  padding: 30px;
+
+  justify-content: center;
+  align-content: center;
+}
+.contact-container {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+
+  justify-content: center;
+  align-content: center;
+}
+.footer-container-fluid-lg {
+  background-color: #062146;
+  text-align: center;
+  color: rgb(14, 8, 8);
+  width: 75%;
+  height: 200px;
+  padding: 30px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+.footer_title {
+  margin-top: 10px;
+}
+
+.btn-group {
+  align-self: flex-end;
 }
