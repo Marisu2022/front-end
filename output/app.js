@@ -20,6 +20,17 @@ textArea.addEventListener("keyup", (e) => {
   }
 });
 
+let reader_about = new FileReader_about();
+reader_about.readAsText(file);
+reader_about.onload = function () {
+  console.log(reader_about.result);
+  document.getElementById("about_me").innerText = reader_about.result;
+};
+reader_about.onerror = function () {
+  console.log(reader_about.error);
+};
+
+
 //aquí comienza editar footer
 function cambiar_parrafo() {
   document.getElementById("edit-footer").style.display = "block";
@@ -43,12 +54,6 @@ textarea.addEventListener("keyup", (e) => {
   }
 });
 
-//cargar el contenido de archivo externo y lo muestra para eso en el html agregar un input de tipo file
-function showFile(input) {
-  let file = input.files[0];
-  alert(`File name: ${file.name}`);
-  alert(`Last modified: ${file.lastModified}`);
-
   let reader = new FileReader();
   reader.readAsText(file);
   reader.onload = function () {
@@ -58,5 +63,10 @@ function showFile(input) {
   reader.onerror = function () {
     console.log(reader.error);
   };
-}
-//aquí termina editar footer
+  //aquí termina editar footer
+/*----cargar el contenido de archivo externo y lo muestra para eso en el html agregar un input de tipo file
+function showFile(input) {
+  let file = input.files[0];
+  alert(`File name: ${file.name}`);
+  alert(`Last modified: ${file.lastModified}`);}
+----*/
